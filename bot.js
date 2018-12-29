@@ -16,7 +16,7 @@ bot.on('message', msg => {
     msg.reply('嗨');
   }
 
-  if (msg.content === config.prefix + 'help'){
+  if (msg.content === prefix + 'help'){
     msg.reply({embed:{
       title: "想得到幫助?" ,
       description: "暫時沒有資料^^" ,
