@@ -1,6 +1,6 @@
 {
   "name": "Test"
-  "description": "Test",
+  "description": "f980129839012ejo9u",
   "version": "0.0.0",
   "main": "app.js",
   "scripts": {
@@ -8,6 +8,6 @@
   },
   "dependencie": {
     "discord.js": "11.1.0",
-    "request: "2.81.0"
+    "request": "2.81.0"
   }
  }
