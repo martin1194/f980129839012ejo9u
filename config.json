@@ -1,0 +1,8 @@
+var Discord = require("discord.js");
+var bot =new Discord.Client();
+
+bot.on("message", message =>{
+  var user = message.aurthor;
+  user.username.channels.send("test");
+})
+
