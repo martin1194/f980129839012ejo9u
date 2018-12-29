@@ -35,4 +35,4 @@ bot.on('guildMemberRemove', member => {
   //member.guild.channels.get(config.lobby).send('**' + member.user.username + '**離開到頻道');
 })
 //bot.login(config.token);
-bot.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN)
