@@ -1,1 +1,1 @@
-worker: node 機器人(TREEEEE).js
+worker: node bot.js
