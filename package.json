@@ -1,10 +1,10 @@
 {
-  "name": "Test",
-  "description": "Test",
+  "name": "機器人(TREEEEE)",
+  "description": "機器人(TREEEEE)",
   "version": "0.0.0",
-  "main": "app.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "bot.js"
   },
   "dependencies": {
     "discord.js": "11.1.0",
