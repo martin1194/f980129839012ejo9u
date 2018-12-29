@@ -23,6 +23,13 @@ bot.on('message', msg => {
       color: 0xFF4E28
     }})
   }
+  if (msg.content === '419208498190248'){
+    msg.reply({embed:{
+      title: "本機器人仍在開發中" ,
+      description: "請細心稍後?" ,
+      color: 0xFF4E28
+    }})
+  }
 });
 
 //bot.on('guildMemberAdd', function(member)
