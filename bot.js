@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require("./config.json");
+//const config = require("./config.json");
 const bot = new Discord.Client();
 
 bot.on('ready',() => {
@@ -25,14 +25,14 @@ bot.on('message', msg => {
   }
 });
 
-bot.on('guildMemberAdd', function(member)
-{
-  member.send("歡迎來到這白癡熊的伺服器XD");
+//bot.on('guildMemberAdd', function(member)
+//{
+//  member.send("歡迎來到這白癡熊的伺服器XD");
   //member.guild.channels.get(config.lobby).send('**' + member.user.username + '**加入到頻道');
-})  ;
-bot.on('guildMemberRemove', member => {
+//})  ;
+//bot.on('guildMemberRemove', member => {
 
   //member.guild.channels.get(config.lobby).send('**' + member.user.username + '**離開到頻道');
-})
+//})
 //bot.login(config.token);
 bot.login(process.env.BOT_TOKEN)
