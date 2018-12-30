@@ -1,3 +1,2 @@
   "prefix": "/",
   "lobby": "440791343258927105",
-  "random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
