@@ -16,25 +16,25 @@ client.on('message', msg => {
   //var sender = message.author; // The person who sent the message
   //var msg = message.content.toUpperCase(); // Takes the message, and makes it all uppercase
   //var prefix = '/' // The text before commands, you can set this to what ever you want
-  //let args = message.content.slice(prefix.length).trim().split('');
-  //let cmd = arg.shift().toLowerCase();
-  //if (message.author.bot) return; //This will ignore all bots
-  //if (!message.content.startsWith(prefix)) return; //This will return if the message doesn't start with your prefix
-  //Command handler
-  //try {
-      //Bonus: Auto-Reload (You should move this into it's own command)
-      //delete require.cache[require.resolve(`./commands/${cmd}.js`)];
+//  let args = message.content.slice(prefix.length).trim().split('');
+//  let cmd = arg.shift().toLowerCase();
+//  if (message.author.bot) return; //This wwill ignore all bots
+//  if (!message.content.startsWith(prefix)) return; //This will return if the message doesn't start with your prefix
+//  //Command handler
+//  try {
+//      //Bonus: Auto-Reload (You should move this into it's own command)
+//      delete require.cache[require.resolve(`./commands/${cmd}.js`)]
 
-  //    let commandFile =require(`./commands/${cmd}.js`)// This will require a file in the command s folder
-  //    commandFile.run(client, message, args); // This will pass three variables into the file
+//      let commandFile =require(`./commands/${cmd}.js`)// This will require a file in the command s folder
+//      commandFile.run(client, message, args); // This will pass three variables into the file
 
-  //} catch (e) { //Thiss will catch any errors, either within the code or if the command doesn't exitst
-  //    console.log(e.stack);
+//  } catch (e) { //Thiss will catch any errors, either within the code or if the command doesn't exitst
+//      console.log(e.stack);
 
-  }
-  if(msg.content === '嗨'){
-    msg.reply('嗨');
-  }
+//  }
+//  if(msg.content === '嗨'){
+//    msg.reply('嗨');
+//  }
 
   if (msg.content === prefix + 'help'){
     msg.reply({embed:{
