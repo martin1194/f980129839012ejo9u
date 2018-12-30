@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 //const config = require("./config.json");
+import config from ('./config.json')
 const bot = new Discord.Client();
 
 bot.on('ready',() => {
