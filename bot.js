@@ -9,6 +9,8 @@ const prefix = '/';
 
 client.on('ready',() => {
   console.log(`成功登入 ${client.user.tag}`);
+  client.user.setStatus('Online') // Online/idle/invisible/dnd
+  client.user.setGame('say /noice for noice') //
 });
 //變量(variables)
 //var sender = message.author; // The person who sent the message
@@ -30,16 +32,24 @@ client.on('ready',() => {
 //      console.log(e.stack);
 
 //  }
-//  if(msg.content === '嗨'){
-//    msg.reply('嗨');
-//  }
+
 
 client.on('message', msg => {
+  if(msg.content === '嗨'){
+    msg.reply('嗨');
+  }
 
-  if (msg.content === prefix + 'help'){
+  if (msg.startsWith (prefix + 'help')){
     msg.reply({embed:{
       title: "想得到幫助?" ,
-      description: "暫時沒有資料^^" ,
+      description: "暫時沒有資料XD"\n"哈哈" ,
+      color: 0xFF4E28
+    }})
+  }
+  if (msg.startsWith (prefix + 'notice')){
+    msg.reply({embed:{
+      title: "我" ,
+      description: "暫時沒有資料XD" ,
       color: 0xFF4E28
     }})
   }
