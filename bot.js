@@ -1,6 +1,3 @@
-//  "random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
-
-
 const Discord = require('discord.js');
 //const config = require("./config.json");
 const bot = new Discord.Client();
@@ -46,3 +43,5 @@ bot.on('message', msg => {
 //})
 //bot.login(config.token);
 bot.login(process.env.BOT_TOKEN)
+
+//  "random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
