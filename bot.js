@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require("./config.json");
+//const config = require("./config.json");
 const bot = new Discord.Client();
 
 bot.on('ready',() => {
@@ -10,13 +10,13 @@ bot.on('message', msg => {
   //變量(variables)
   //var sender = message.author; // The person who sent the message
   //var msg = message.content.toUpperCase(); // Takes the message, and makes it all uppercase
-  //var prefix = '/' // The text before commands, you can set this to what ever you want
+  var prefix = '/' // The text before commands, you can set this to what ever you want
 
   if(msg.content === '嗨'){
     msg.reply('嗨');
   }
 
-  if (msg.content === config.prefix + 'help'){
+  if (msg.content === prefix + 'help'){
     msg.reply({embed:{
       title: "想得到幫助?" ,
       description: "暫時沒有資料^^" ,
@@ -43,5 +43,3 @@ bot.on('message', msg => {
 //})
 //bot.login(config.token);
 bot.login(process.env.BOT_TOKEN)
-
-//  "random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
