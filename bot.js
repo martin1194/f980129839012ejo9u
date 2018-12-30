@@ -10,12 +10,10 @@ const prefix = '/';
 client.on('ready',() => {
   console.log(`成功登入 ${client.user.tag}`);
 });
-
-client.on('message', msg => {
-  //變量(variables)
-  //var sender = message.author; // The person who sent the message
-  //var msg = message.content.toUpperCase(); // Takes the message, and makes it all uppercase
-  //var prefix = '/' // The text before commands, you can set this to what ever you want
+//變量(variables)
+//var sender = message.author; // The person who sent the message
+//var msg = message.content.toUpperCase(); // Takes the message, and makes it all uppercase
+//var prefix = '/' // The text before commands, you can set this to what ever you want
 //  let args = message.content.slice(prefix.length).trim().split('');
 //  let cmd = arg.shift().toLowerCase();
 //  if (message.author.bot) return; //This wwill ignore all bots
@@ -35,6 +33,8 @@ client.on('message', msg => {
 //  if(msg.content === '嗨'){
 //    msg.reply('嗨');
 //  }
+
+client.on('message', msg => {
 
   if (msg.content === prefix + 'help'){
     msg.reply({embed:{
