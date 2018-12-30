@@ -13,7 +13,7 @@ bot.on('message', msg => {
   //變量(variables)
   //var sender = message.author; // The person who sent the message
   //var msg = message.content.toUpperCase(); // Takes the message, and makes it all uppercase
-  var prefix = '/' // The text before commands, you can set this to what ever you want
+  //var prefix = '/' // The text before commands, you can set this to what ever you want
 
   if(msg.content === '嗨'){
     msg.reply('嗨');
