@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-//const config = require("./config.json");
+const config = require("./config.json");
 const bot = new Discord.Client();
 
 bot.on('ready',() => {
@@ -16,7 +16,7 @@ bot.on('message', msg => {
     msg.reply('嗨');
   }
 
-  if (msg.content === prefix + 'help'){
+  if (msg.content === config.prefix + 'help'){
     msg.reply({embed:{
       title: "想得到幫助?" ,
       description: "暫時沒有資料^^" ,
