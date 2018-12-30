@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 //"prefix": "/",
 //"lobby": "440791343258927105",
 //"random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
-import config from ('./config.json')
+//import config from ('./config.json')
 const client = new Discord.Client();
 const prefix = '/'
 
