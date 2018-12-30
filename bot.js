@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 //"random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
 //import config from ('./config.json')
 const client = new Discord.Client();
-var prefix = '/'
+const prefix = '/';
 
 client.on('ready',() => {
   console.log(`成功登入 ${client.user.tag}`);
