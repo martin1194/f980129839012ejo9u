@@ -9,7 +9,7 @@ const client = new Discord.Client();
 
 client.on('ready',() => {
 
-  client.bot.setActivity('上班', { type: '正在' }) //正在做什麼
+  client.bot.setActivity("上班", { type: 'PLAYING' }) //正在做什麼
   .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
 
