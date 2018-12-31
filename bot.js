@@ -5,6 +5,7 @@ const Discord = require('discord.js');
 //"random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
 //import config from ('./config.json')
 const client = new Discord.Client();
+npm list --depth=0
 //const prefix = '/';
 
 client.on('ready',() => {
