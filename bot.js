@@ -38,7 +38,9 @@ client.on('message', msg => {
   if(msg.content === '嗨'){
     msg.reply('嗨');
   }
-
+  if(msg.content === '嗨!!'){
+    msg.channel.send('嗨!!');
+  }
   if (msg.content === (prefix + 'help')){
     msg.reply({embed:{
       title: "想得到幫助?" ,
@@ -46,7 +48,7 @@ client.on('message', msg => {
       color: 0xFF4E28
     }})
   }
-  if (msg.content === (prefix + 'notice')){
+    if (msg.content === (prefix + 'notice')){
     msg.reply({embed:{
       title: "我" ,
       description: "暫時沒有資料XD" ,
