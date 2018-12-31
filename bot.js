@@ -8,9 +8,9 @@ const client = new Discord.Client();
 const prefix = '/';
 
 client.on('ready',() => {
-  console.log(`成功登入 ${client.user.tag}`);
-  client.user.setStatus('Online') // Online/idle/invisible/dnd
-  client.user.setGame('say /noice for noice') //
+//  console.log(`成功登入 ${client.user.tag}`);
+//  client.user.setStatus('Online') // Online/idle/invisible/dnd
+//  client.user.setGame('say /noice for noice') //
 });
 //變量(variables)
 //var sender = message.author; // The person who sent the message
