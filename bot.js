@@ -11,7 +11,7 @@ client.on('ready',() => {
 
   client.user.setPresence({
         game: {
-            name: '睡覺',
+            name: "睡覺",
             type: 'PLAYING' //WATCHING;PLAYING
         },
         status: 'idle' //online;idle;invisible
