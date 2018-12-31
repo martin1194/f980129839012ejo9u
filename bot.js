@@ -11,7 +11,7 @@ client.on('ready',() => {
 
   client.user.setPresence({
         Activity: {
-            name: "周公ONLINE",
+            name: "周公約會",
             type: 'PLAYING' //WATCHING;PLAYING
         },
         status: 'idle' //online;idle;invisible
@@ -20,7 +20,7 @@ client.on('ready',() => {
 //  console.log(`成功登入 ${client.user.tag}`);
 //  client.user.setStatus('Online') // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("周公ONLINE", { type: "PLAYING"})
+  client.user.setActivity("周公ONLINE1", { type: "PLAYING"})
 
 });
 //變量(variables)
