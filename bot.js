@@ -39,19 +39,19 @@ client.on('message', msg => {
     msg.reply('嗨');
   }
 
-  if (msg.startsWith (prefix + 'help')){
+  if (msg.content === (prefix + 'help')){
     msg.reply({embed:{
       title: "想得到幫助?" ,
       description: "無指令呀XD" ,
       color: 0xFF4E28
-    }});
+    }})
   }
-  if (msg.startsWith (prefix + 'notice')){
+  if (msg.content === (prefix + 'notice')){
     msg.reply({embed:{
       title: "我" ,
       description: "暫時沒有資料XD" ,
       color: 0xFF4E28
-    }});
+    }})
   }
   if (msg.content === '419208498190248'){
     msg.reply({embed:{
