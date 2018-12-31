@@ -42,7 +42,7 @@ client.on('message', msg => {
   if (msg.startsWith (prefix + 'help')){
     msg.reply({embed:{
       title: "想得到幫助?" ,
-      description: "無指令呀XD\n開心地玩啦~\n個BOT應該唔會變架啦" ,
+      description: "無指令呀XD" ,
       color: 0xFF4E28
     }})
   }
