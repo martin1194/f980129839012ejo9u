@@ -35,6 +35,7 @@ client.on('ready',() => {
 
 
 client.on('message', msg => {
+  if(message.author.bot) return;
   if(msg.content === '嗨'){
     msg.reply('嗨');
   }
