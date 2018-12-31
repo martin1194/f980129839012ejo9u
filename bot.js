@@ -9,13 +9,15 @@ const client = new Discord.Client();
 
 client.on('ready',() => {
 
-  client.user.setPresence({
+  client.user.setPresence(
+    //{
         //Activity: {
         //    name: "周公ONLINE",
         //    type: 'PLAYING' //WATCHING;PLAYING
-        },
+      //  },
         status: 'idle' //online;idle;invisible
-    })
+    //}
+  )
 
 //  console.log(`成功登入 ${client.user.tag}`);
 //  client.user.setStatus('Online') // Online/idle/invisible/dnd
