@@ -9,14 +9,8 @@ const client = new Discord.Client();
 
 client.on('ready',() => {
 
-  client.user.setActivity('上班', {type: "PLAYING"}) //正在做什麼
-  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
-  .catch(console.error);
-
-
-  client.user.setStatus('idle') //online;idle;invisible
-  .then(console.log)
-  .catch(console.error);
+  client.user.setActivity('上班', {type: "PLAYING"}); //正在做什麼
+  client.user.setStatus('idle'); //online;idle;invisible
 //  console.log(`成功登入 ${client.user.tag}`);
 //  client.user.setStatus('Online') // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
