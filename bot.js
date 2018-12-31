@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 //"random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
 //import config from ('./config.json')
 const client = new Discord.Client();
-const prefix = '/';
+//const prefix = '/';
 
 client.on('ready',() => {
 //  console.log(`成功登入 ${client.user.tag}`);
@@ -37,19 +37,19 @@ client.on('ready',() => {
 client.on('message', msg => {
   if(msg.author.bot) return;
   if(msg.content === '嗨'){
-    msg.reply('嗨');
+    msg.reply("嗨");
   }
   if(msg.content === '嗨!!'){
-    msg.channel.send('嗨!!');
+    msg.channel.send("嗨!!");
   }
-  if (msg.content === (prefix + 'help')){
+  if (checkCommand(message,"help")){
     msg.reply({embed:{
       title: "想得到幫助?" ,
       description: "無指令呀XD" ,
       color: 0xFF4E28
     }})
   }
-    if (msg.content === (prefix + 'notice')){
+    if (checkCommand(message,"notice")){
     msg.reply({embed:{
       title: "我" ,
       description: "暫時沒有資料XD" ,
@@ -62,6 +62,10 @@ client.on('message', msg => {
       description: "請細心稍後?" ,
       color: 0xFF4E28
     }})
+  }
+  function checkCommand(message, commandName)
+  {
+    return message.content.toLowerCase().startsWith("/" + commandName)
   }
 });
 
