@@ -10,7 +10,7 @@ const client = new Discord.Client();
 client.on('ready',() => {
 
   client.user.setPresence({
-        game: {
+        Activity: {
             name: "睡覺",
             type: 'PLAYING' //WATCHING;PLAYING
         },
