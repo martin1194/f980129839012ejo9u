@@ -52,7 +52,7 @@ client.on('message', msg => {
   if (checkCommand(msg,"help")){
     msg.reply({embed:{
       title: "想得到幫助?" ,
-      description: "無指令呀XD" ,
+      description: "無指令呀XD!! 都無聊天功能(!)" ,
       color: 0xFF4E28
     }})
   }
