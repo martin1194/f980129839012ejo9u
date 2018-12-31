@@ -42,14 +42,14 @@ client.on('message', msg => {
   if(msg.content === '嗨!!'){
     msg.channel.send("嗨!!");
   }
-  if (checkCommand(message,"help")){
+  if (checkCommand(msg,"help")){
     msg.reply({embed:{
       title: "想得到幫助?" ,
       description: "無指令呀XD" ,
       color: 0xFF4E28
     }})
   }
-    if (checkCommand(message,"notice")){
+    if (checkCommand(msg,"notice")){
     msg.reply({embed:{
       title: "我" ,
       description: "暫時沒有資料XD" ,
@@ -63,9 +63,9 @@ client.on('message', msg => {
       color: 0xFF4E28
     }})
   }
-  function checkCommand(message, commandName)
+  function checkCommand(msg, commandName)
   {
-    return message.content.toLowerCase().startsWith("/" + commandName)
+    return msg.content.toLowerCase().startsWith("/" + commandName)
   }
 });
 
