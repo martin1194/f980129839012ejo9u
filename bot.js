@@ -10,17 +10,19 @@ const client = new Discord.Client();
 client.on('ready',() => {
 
   client.user.setPresence({
-        Activity: {
-            name: "周公約會",
-            type: 'PLAYING' //WATCHING;PLAYING
+
+        status: 'idle', //online;idle;invisible
+    //    Activity: {
+      //      name: "周公約會",
+      //      type: 'PLAYING' //WATCHING;PLAYING
         },
-        status: 'idle' //online;idle;invisible
     })
+
 
 //  console.log(`成功登入 ${client.user.tag}`);
 //  client.user.setStatus('Online') // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("周公ONLINE1", { type: "PLAYING"})
+  client.user.setActivity("周公ONLINE", { type: "PLAYING"})
 
 });
 //變量(variables)
@@ -67,10 +69,10 @@ client.on('message', msg => {
       color: 0xFF4E28
     }})
   }
-  if (msg.content === '419208498190248'){
+  if (msg.content === 'HI'){
     msg.reply({embed:{
-      title: "本機器人仍在開發中" ,
-      description: "請細心稍後?" ,
+      title: "本機器人沒有聊天功能" ,
+      description: "YAY" ,
       color: 0xFF4E28
     }})
   }
