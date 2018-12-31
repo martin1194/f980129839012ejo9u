@@ -8,9 +8,20 @@ const client = new Discord.Client();
 //const prefix = '/';
 
 client.on('ready',() => {
+
+  client.user.setActivity('上班', { type: '正在' }) //正在做什麼
+  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
+  .catch(console.error);
+
+
+  client.user.setStatus('idle') //online;idle;invisible
+  .then(console.log)
+  .catch(console.error);
 //  console.log(`成功登入 ${client.user.tag}`);
 //  client.user.setStatus('Online') // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
+
+
 });
 //變量(variables)
 //var sender = message.author; // The person who sent the message
@@ -65,7 +76,7 @@ client.on('message', msg => {
   }
   function checkCommand(msg, commandName)
   {
-    return msg.content.toLowerCase().startsWith("/" + commandName)
+    return msg.content.toLowerCase().startsWith("!" + commandName)
   }
 });
 
