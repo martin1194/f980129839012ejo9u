@@ -9,12 +9,12 @@ const client = new Discord.Client();
 
 client.on('ready',() => {
 
-  client.bot.setActivity('上班', { type: 'PLAYING' }) //正在做什麼
+  client.user.setActivity('上班') //正在做什麼
   .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
 
 
-  client.bot.setStatus('idle') //online;idle;invisible
+  client.user.setStatus('idle') //online;idle;invisible
   .then(console.log)
   .catch(console.error);
 //  console.log(`成功登入 ${client.user.tag}`);
