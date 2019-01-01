@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 //const config = require("./config.json");
 //"prefix": "/",
 //"lobby": "440791343258927105",
-//"random": "Math.floor (Math.random() *(number -1 + 1)) + 1"
 //import config from ('./config.json')
 const client = new Discord.Client();
 //const prefix = '/';
@@ -42,6 +41,8 @@ client.on('ready',() => {
 
 
 client.on('message', msg => {
+  funtion random(Math.floor (Math.random() *(number -1 + 1)) + 1");
+  
   if(msg.author.bot) return;
   if(msg.content === '嗨'){
     msg.reply("嗨");
