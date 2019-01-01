@@ -15,7 +15,7 @@ client.on('ready',() => {
 //  console.log(`成功登入 ${client.user.tag}`);
   client.user.setStatus('Online'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("CSGO", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("毛毛", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
@@ -65,6 +65,9 @@ client.on('message', msg => {
       description: "暫時沒有資料XD" ,
       color: 0xFF4E28
     }})
+  }
+  if (checkCommand(msg,"notice")){
+    msg.channel.send("你就ON9!!!");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
