@@ -49,7 +49,7 @@ client.on('message', msg => {
   if(msg.content === '嗨!!'){
     msg.channel.send("嗨!!");
   }
-  if(msg.content.StartsWith ("on9")){
+  if(msg.content.StartsWith (`on9`)){
     msg.channel.send("你就ON9!!!");
   }
   if (checkCommand(msg,"help")){
