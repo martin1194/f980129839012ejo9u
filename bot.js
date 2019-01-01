@@ -49,6 +49,9 @@ client.on('message', msg => {
   if(msg.content === '嗨!!'){
     msg.channel.send("嗨!!");
   }
+  if(msg.content.StartsWith'on9'){
+    msg.channel.send("嗨!!");
+  }
   if (checkCommand(msg,"help")){
     msg.reply({embed:{
       title: "想得到幫助?" ,
@@ -62,6 +65,9 @@ client.on('message', msg => {
       description: "暫時沒有資料XD" ,
       color: 0xFF4E28
     }})
+  }
+  if (checkCommand(msg,"on9")) {
+    msg.reply("你就ON9 @___@")
   }
   if (msg.content === '419208498190248'){
     msg.reply({embed:{
