@@ -49,8 +49,8 @@ client.on('message', msg => {
   if(msg.content === '嗨!!'){
     msg.channel.send("嗨!!");
   }
-  if(msg.content.StartsWith"on9"){
-    msg.channel.send("嗨!!");
+  if(msg.content.StartsWith ("on9")){
+    msg.channel.send("你就ON9!!!");
   }
   if (checkCommand(msg,"help")){
     msg.reply({embed:{
@@ -67,7 +67,7 @@ client.on('message', msg => {
     }})
   }
   if (checkCommand(msg,"on9")) {
-    msg.reply("你就ON9 @___@")
+    msg.reply("@___@... 唔好啦~")
   }
   if (msg.content === '419208498190248'){
     msg.reply({embed:{
