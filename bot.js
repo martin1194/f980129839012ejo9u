@@ -10,13 +10,13 @@ const client = new Discord.Client();
 client.on('ready',() => {
 
   client.user.setPresence({
-        status: 'nline' //online;idle;invisible
+        status: 'online' //online;idle;invisible
     })
 
 //  console.log(`成功登入 ${client.user.tag}`);
 //  client.user.setStatus('idle') // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("WC", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("CSGO", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
