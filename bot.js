@@ -41,9 +41,8 @@ client.on('ready',() => {
 
 
 client.on('message', msg => {
-  //funtion random(Math.floor (Math.random() *(number -1 + 1)) + 1");
-
   if(msg.author.bot) return;
+  var on9 = []
   if(msg.content === '嗨'){
     msg.reply("嗨");
   }
