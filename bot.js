@@ -15,7 +15,7 @@ client.on('ready',() => {
 //  console.log(`成功登入 ${client.user.tag}`);
   client.user.setStatus('idle'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("SLEEP(01:40)", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("上班(08:00)", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
