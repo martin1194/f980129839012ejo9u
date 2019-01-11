@@ -89,10 +89,10 @@ client.on('message', msg => {
     msg.channel.send("星期一、三、四、五皆為上課天");
   }
   if (checkCommand(msg,"002")){//未來加班日
-    msg.channel.send("1月13日(日)");
-    msg.channel.send("1月19日(六)");
-    msg.channel.send("1月26日(六)");
-    msg.channel.send("1月27日(日)");
+    msg.channel.send("1月13日(日)
+1月19日(六)
+1月26日(六)
+1月27日(日)");
   }  
   if (checkCommand(msg,"003")){//未來休息日
     msg.channel.send("1月12日(六)");
