@@ -57,6 +57,16 @@ client.on('message', msg => {
       title: "未來行程" ,
       description: "輸入「!未來行程」可查看未來時間安排" ,
       color: 0xFF4E28
+    }});
+    msg.reply({embed:{
+      title: "未來上課日" ,
+      description: "輸入「!未來上課日」可查看未來時間安排" ,
+      color: 0xFF4E28
+    }})
+    msg.reply({embed:{
+      title: "未來加班日" ,
+      description: "輸入「!未來加班日」可查看未來時間安排" ,
+      color: 0xFF4E28
     }})
   }
     if (checkCommand(msg,"notice")){
@@ -68,8 +78,16 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"未來行程")){
     msg.channel.send("12/1 20:00 出門食飯");
-    msg.channel.send("14/1 16/1 17/1 18/1 返學");
-    msg.channel.send("15/1 射波");
+    msg.channel.send("24/1 20:00 出門食飯");
+  }
+  if (checkCommand(msg,"未來上課日")){
+    msg.channel.send("星期一、三、四、五皆為上課天");
+  }
+  if (checkCommand(msg,"未來加班日")){
+    msg.channel.send("1月13日(日)");
+    msg.channel.send("1月19日(六)");
+    msg.channel.send("1月26日(六)");
+    msg.channel.send("1月27日(日)");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
