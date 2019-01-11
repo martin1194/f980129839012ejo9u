@@ -54,7 +54,7 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"help")){
     msg.reply({embed:{
-      title: "幫助" ,
+      title: "未來行程" ,
       description: "輸入「!未來行程」可查看未來時間安排" ,
       color: 0xFF4E28
     }})
