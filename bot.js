@@ -54,8 +54,8 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"help")){
     msg.reply({embed:{
-      title: "想得到幫助?" ,
-      description: "無指令呀XD!! 都無聊天功能(!)" ,
+      title: "幫助" ,
+      description: "輸入「!未來行程」可查看未來時間安排" ,
       color: 0xFF4E28
     }})
   }
@@ -66,8 +66,8 @@ client.on('message', msg => {
       color: 0xFF4E28
     }})
   }
-  if (checkCommand(msg,"notice")){
-    msg.channel.send("你就ON9!!!");
+  if (checkCommand(msg,"未來行程")){
+    msg.channel.send("12/1 20:00 出門食飯"\n"星期一、三、四、五 返學");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
