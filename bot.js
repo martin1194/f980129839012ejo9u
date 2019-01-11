@@ -60,17 +60,17 @@ client.on('message', msg => {
     }});
     msg.reply({embed:{
       title: "未來上課日" ,
-      description: "輸入「!001」可查看未來時間安排" ,
+      description: "輸入「!001」可查看未來上課日" ,
       color: 0xFF4E28
     }})
     msg.reply({embed:{
       title: "未來加班日" ,
-      description: "輸入「!002」可查看未來時間安排" ,
+      description: "輸入「!002」可查看未來加班日" ,
       color: 0xFF4E28
     }})
     msg.reply({embed:{
       title: "未來休息日" ,
-      description: "輸入「!003」可查看未來時間安排" ,
+      description: "輸入「!003」可查看未來休息日" ,
       color: 0xFF4E28
     }})
   }
