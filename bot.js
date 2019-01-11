@@ -55,22 +55,22 @@ client.on('message', msg => {
   if (checkCommand(msg,"help")){
     msg.reply({embed:{
       title: "未來行程" ,
-      description: "輸入「!未來行程」可查看未來時間安排" ,
+      description: "輸入「!000」可查看未來時間安排" ,
       color: 0xFF4E28
     }});
     msg.reply({embed:{
       title: "未來上課日" ,
-      description: "輸入「!未來上課日」可查看未來時間安排" ,
+      description: "輸入「!001」可查看未來時間安排" ,
       color: 0xFF4E28
     }})
     msg.reply({embed:{
       title: "未來加班日" ,
-      description: "輸入「!未來加班日」可查看未來時間安排" ,
+      description: "輸入「!002」可查看未來時間安排" ,
       color: 0xFF4E28
     }})
     msg.reply({embed:{
       title: "未來休息日" ,
-      description: "輸入「!未來休息日」可查看未來時間安排" ,
+      description: "輸入「!003」可查看未來時間安排" ,
       color: 0xFF4E28
     }})
   }
@@ -81,20 +81,20 @@ client.on('message', msg => {
       color: 0xFF4E28
     }})
   }
-  if (checkCommand(msg,"未來行程")){
+  if (checkCommand(msg,"000")){//未來行程
     msg.channel.send("12/1 20:00 出門食飯");
     msg.channel.send("24/1 20:00 出門食飯");
   }
-  if (checkCommand(msg,"未來上課日")){
+  if (checkCommand(msg,"001")){//未來上課日
     msg.channel.send("星期一、三、四、五皆為上課天");
   }
-  if (checkCommand(msg,"未來加班日")){
+  if (checkCommand(msg,"002")){//未來加班日
     msg.channel.send("1月13日(日)");
     msg.channel.send("1月19日(六)");
     msg.channel.send("1月26日(六)");
     msg.channel.send("1月27日(日)");
   }  
-  if (checkCommand(msg,"未來休息日")){
+  if (checkCommand(msg,"003")){//未來休息日
     msg.channel.send("1月12日(六)");
     msg.channel.send("1月15日(二)");
     msg.channel.send("1月20日(日)");
