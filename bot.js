@@ -67,7 +67,9 @@ client.on('message', msg => {
     }})
   }
   if (checkCommand(msg,"未來行程")){
-    msg.channel.send("12/1 20:00 出門食飯"\n"星期一、三、四、五 返學");
+    msg.channel.send("12/1 20:00 出門食飯");
+    msg.channel.send("14/1 16/1 17/1 18/1 返學");
+    msg.channel.send("15/1 射波");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
