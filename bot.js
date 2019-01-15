@@ -15,7 +15,7 @@ client.on('ready',() => {
 //  console.log(`成功登入 ${client.user.tag}`);
   client.user.setStatus('idle'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("失蹤人口", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("失蹤中 勿擾", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
@@ -82,7 +82,6 @@ client.on('message', msg => {
     }})
   }
   if (checkCommand(msg,"000")){//未來行程
-    msg.channel.send("15/1 13:00 出門飲茶");
     msg.channel.send("24/1 20:00 出門食飯");
   }
   if (checkCommand(msg,"001")){//未來上課日
@@ -94,7 +93,6 @@ client.on('message', msg => {
     msg.channel.send("1月27日(日)");
   }  
   if (checkCommand(msg,"003")){//未來休息日
-    msg.channel.send("1月15日(二)");
     msg.channel.send("1月20日(日)");
   }
   if (checkCommand(msg,"on9")) {
