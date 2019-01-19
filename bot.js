@@ -15,7 +15,7 @@ client.on('ready',() => {
 //  console.log(`成功登入 ${client.user.tag}`);
   client.user.setStatus('Online'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("sleep(01:19)", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("SAY「!!help」", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
@@ -82,7 +82,6 @@ client.on('message', msg => {
     }})
   }
   if (checkCommand(msg,"000")){//未來行程
-    msg.channel.send("18/1 19:30 出門睇戲");
     msg.channel.send("24/1 20:00 出門食飯");
   }
   if (checkCommand(msg,"001")){//未來上課日
