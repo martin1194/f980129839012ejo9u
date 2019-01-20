@@ -73,6 +73,11 @@ client.on('message', msg => {
       description: "輸入「!!003」可查看未來休息日" ,
       color: 0xFF4E28
     }})
+    msg.reply({embed:{
+      title: "是日預計時間安排" ,
+      description: "輸入「!!004」可查看是日預計安排" ,
+      color: 0xFF4E28
+    }})
   }
     if (checkCommand(msg,"notice")){
     msg.reply({embed:{
@@ -82,18 +87,25 @@ client.on('message', msg => {
     }})
   }
   if (checkCommand(msg,"000")){//未來行程
+    msg.channel.send("未來行程:");
     msg.channel.send("24/1 20:00 出門食飯");
   }
   if (checkCommand(msg,"001")){//未來上課日
-    msg.channel.send("星期一、三、四、五皆為上課天");
+    msg.channel.send("本周上課天為星期一、三、四、五");
   }
   if (checkCommand(msg,"002")){//未來加班日
-    msg.channel.send("1月19日(六)");
+    msg.channel.send("未來加班日:");
     msg.channel.send("1月26日(六)");
     msg.channel.send("1月27日(日)");
   }  
   if (checkCommand(msg,"003")){//未來休息日
-    msg.channel.send("1月20日(日)");
+    msg.channel.send("未來休息日:");
+    msg.channel.send("無哂LU");
+  }
+    if (checkCommand(msg,"004")){//是日預計安排
+    msg.channel.send("是日預計安排:");
+    msg.channel.send("08:00上班 18:00下班");
+    msg.channel.send("18:45上課 21:45下課");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
