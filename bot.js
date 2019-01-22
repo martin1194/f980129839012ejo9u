@@ -53,14 +53,19 @@ client.on('message', msg => {
     msg.channel.send("你就ON9!!!");
   }
   if (checkCommand(msg,"help")){
+     msg.reply({embed:{
+      title: "唉~~" ,
+      description: "都訂左蓋..  仲想HELP? 好啦.." ,
+      color: 0xFF4E28
+    }});
     msg.reply({embed:{
       title: "未來行程" ,
       description: "輸入「!!000」可查看未來時間安排" ,
       color: 0xFF4E28
     }});
     msg.reply({embed:{
-      title: "未來上課日" ,
-      description: "輸入「!!001」可查看未來上課日" ,
+      title: "本週上課日" ,
+      description: "輸入「!!001」可查看本週上課日" ,
       color: 0xFF4E28
     }})
     msg.reply({embed:{
@@ -71,11 +76,6 @@ client.on('message', msg => {
     msg.reply({embed:{
       title: "未來休息日" ,
       description: "輸入「!!003」可查看未來休息日" ,
-      color: 0xFF4E28
-    }})
-    msg.reply({embed:{
-      title: "是日預計時間安排" ,
-      description: "輸入「!!004」可查看是日預計安排" ,
       color: 0xFF4E28
     }})
   }
@@ -90,7 +90,7 @@ client.on('message', msg => {
     msg.channel.send("未來行程:");
     msg.channel.send("24/1 20:00 出門食飯");
   }
-  if (checkCommand(msg,"001")){//未來上課日
+  if (checkCommand(msg,"001")){//本週上課日
     msg.channel.send("本周上課天為星期一、三、四、五");
   }
   if (checkCommand(msg,"002")){//未來加班日
@@ -101,11 +101,6 @@ client.on('message', msg => {
   if (checkCommand(msg,"003")){//未來休息日
     msg.channel.send("未來休息日:");
     msg.channel.send("無哂LU");
-  }
-    if (checkCommand(msg,"004")){//是日預計安排
-    msg.channel.send("是日預計安排:");
-    msg.channel.send("08:00上班 18:00下班");
-    msg.channel.send("18:45上課 21:45下課");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
