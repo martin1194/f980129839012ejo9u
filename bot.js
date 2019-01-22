@@ -13,7 +13,7 @@ client.on('ready',() => {
 //    })
 
 //  console.log(`成功登入 ${client.user.tag}`);
-  client.user.setStatus('dnd'); // Online/idle/invisible/dnd
+  client.user.setStatus('invisible'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
   client.user.setActivity("死左", { type: "PLAYING"})//WATCHING;PLAYING
 
