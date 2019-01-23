@@ -100,8 +100,8 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"002")){//未來加班日
     msg.channel.send("未來加班日:");
-    msg.channel.send("1月26日(六)");
-    msg.channel.send("1月27日(日)");
+    msg.channel.send("1月26日(六)+1月27日(日)");
+    msg.channel.send("2月8日(四)");
   }  
   if (checkCommand(msg,"003")){//未來休息日
     msg.channel.send("未來休息日:");
@@ -109,7 +109,7 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"004")){//最後更新時間
     msg.channel.send("最後更新時間:");
-    msg.channel.send("2019/01/23");
+    msg.channel.send("2019/01/23 19:57");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
