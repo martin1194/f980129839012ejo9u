@@ -78,6 +78,11 @@ client.on('message', msg => {
       description: "輸入「!!003」可查看未來休息日" ,
       color: 0xFF4E28
     }})
+    msg.reply({embed:{
+      title: "未來休息日" ,
+      description: "輸入「!!004」可查看最後更新時間" ,
+      color: 0xFF4E28
+    }})
   }
     if (checkCommand(msg,"notice")){
     msg.reply({embed:{
@@ -100,7 +105,11 @@ client.on('message', msg => {
   }  
   if (checkCommand(msg,"003")){//未來休息日
     msg.channel.send("未來休息日:");
-    msg.channel.send("無哂LU");
+    msg.channel.send("2月6日(二)+2月7日(三)");
+  }
+  if (checkCommand(msg,"004")){//最後更新時間
+    msg.channel.send("最後更新時間:");
+    msg.channel.send("2019/01/23");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
