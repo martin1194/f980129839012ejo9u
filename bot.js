@@ -96,8 +96,8 @@ client.on('message', msg => {
     msg.channel.send("暫時沒有約");
   }
   if (checkCommand(msg,"001")){//本週上課日
-    msg.channel.send("本周上課天為星期一、三、四、五");
-    msg.channel.send("下周上課天為星期一、三、四");
+    msg.channel.send("本周上課天為星期一、三、四");
+    msg.channel.send("下周上課天為星期一、三、四、五");
   }
   if (checkCommand(msg,"002")){//未來加班日
     msg.channel.send("未來加班日:");
@@ -110,7 +110,7 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"004")){//最後更新時間
     msg.channel.send("最後更新時間:");
-    msg.channel.send("2019/01/25 01:56");
+    msg.channel.send("2019/01/27 00:56");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
