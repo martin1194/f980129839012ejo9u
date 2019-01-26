@@ -79,7 +79,7 @@ client.on('message', msg => {
       color: 0xFF4E28
     }})
     msg.reply({embed:{
-      title: "未來休息日" ,
+      title: "最後更新時間" ,
       description: "輸入「!!004」可查看最後更新時間" ,
       color: 0xFF4E28
     }})
