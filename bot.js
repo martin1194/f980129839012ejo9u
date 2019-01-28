@@ -93,7 +93,7 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"000")){//未來行程
     msg.channel.send("未來行程:");
-    msg.channel.send("暫時沒有約");
+    msg.channel.send("29/1 19:00到太和");
   }
   if (checkCommand(msg,"001")){//本週上課日
     msg.channel.send("本周上課天為星期一、三、四");
@@ -101,7 +101,6 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"002")){//未來加班日
     msg.channel.send("未來加班日:");
-    msg.channel.send("1月26日(六)+1月27日(日)");
     msg.channel.send("2月8日(四)");
   }  
   if (checkCommand(msg,"003")){//未來休息日
@@ -110,7 +109,7 @@ client.on('message', msg => {
   }
   if (checkCommand(msg,"004")){//最後更新時間
     msg.channel.send("最後更新時間:");
-    msg.channel.send("2019/01/27 00:56");
+    msg.channel.send("2019/01/29 01:27");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
