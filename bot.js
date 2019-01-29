@@ -105,7 +105,7 @@ client.on('message', msg => {
   }  
   if (checkCommand(msg,"003")){//未來休息日
     msg.channel.send("未來休息日:");
-    msg.channel.send("2月5日(一)+2月6日(二)+2月7日(三)");
+    msg.channel.send("2月2日(六)至2月6日(三)");
   }
   if (checkCommand(msg,"004")){//最後更新時間
     msg.channel.send("最後更新時間:");
