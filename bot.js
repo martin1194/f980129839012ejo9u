@@ -120,16 +120,16 @@ client.on('message', msg => {
       description: "請細心稍後?" ,
       color: 0xFF4E28
     }})
- // if (msg.content === '419208498190248'){
- //   var test = "!第一\n"+
- //       "!第二";
-//    msg.reply(test)};
-//  }
-//  function checkCommand(msg, commandName)
-//  {
-//    return msg.content.toLowerCase().startsWith("!!" + commandName)
-//  }
-//});
+  if (msg.content === '419208498190248'){
+    var test = "!第一\n" +
+        "!第二";
+    msg.reply(test)};
+  }
+  function checkCommand(msg, commandName)
+  {
+    return msg.content.toLowerCase().startsWith("!!" + commandName)
+  }
+});
 
 //Client.on('guildMemberAdd', function(member)
 //{
