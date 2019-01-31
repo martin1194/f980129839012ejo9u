@@ -129,7 +129,7 @@ client.on('message', msg => {
 //  {
 //    return msg.content.toLowerCase().startsWith("!!" + commandName)
 //  }
-});
+//});
 
 //Client.on('guildMemberAdd', function(member)
 //{
