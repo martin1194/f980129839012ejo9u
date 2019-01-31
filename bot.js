@@ -13,9 +13,9 @@ client.on('ready',() => {
 //    })
 
 //  console.log(`成功登入 ${client.user.tag}`);
-  client.user.setStatus('invisible'); // Online/idle/invisible/dnd
+  client.user.setStatus('Online'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("死左", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("後台測試中", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
@@ -96,7 +96,7 @@ client.on('message', msg => {
     msg.channel.send("29/1 19:00到太和");
   }
   if (checkCommand(msg,"001")){//本週上課日
-    msg.channel.send("本周上課天為星期一、三、四");
+    msg.channel.send("本周上課天為星期一、三、四"\);
     msg.channel.send("下周上課天為星期一、三、四、五");
   }
   if (checkCommand(msg,"002")){//未來加班日
