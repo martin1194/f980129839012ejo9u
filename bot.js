@@ -123,7 +123,7 @@ client.on('message', msg => {
   if (msg.content === '419208498190248'){
     var test = "!第一\n"+
         "!第二";
-    msg.reply(test)});
+    msg.reply(test)};
   }
   function checkCommand(msg, commandName)
   {
