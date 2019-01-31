@@ -96,7 +96,7 @@ client.on('message', msg => {
     msg.channel.send("29/1 19:00到太和");
   }
   if (checkCommand(msg,"001")){//本週上課日
-    msg.channel.send("本周上課天為星期一、三、四"\n"HI");
+    msg.channel.send("本周上課天為星期一、三、四\n" + "HI");
     msg.channel.send("下周上課天為星期一、三、四、五");
   }
   if (checkCommand(msg,"002")){//未來加班日
