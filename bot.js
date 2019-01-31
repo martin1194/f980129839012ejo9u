@@ -15,7 +15,7 @@ client.on('ready',() => {
 //  console.log(`成功登入 ${client.user.tag}`);
   client.user.setStatus('Online'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("後台測試中", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("測試", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
@@ -120,10 +120,6 @@ client.on('message', msg => {
       description: "請細心稍後?" ,
       color: 0xFF4E28
     }})
-  if (msg.content === '419208498190248'){
-    var test = "!第一\n" +
-        "!第二";
-    msg.reply(test)};
   }
   function checkCommand(msg, commandName)
   {
