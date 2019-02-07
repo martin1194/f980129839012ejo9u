@@ -13,9 +13,9 @@ client.on('ready',() => {
 //    })
 
 //  console.log(`成功登入 ${client.user.tag}`);
-  client.user.setStatus('invisible'); // Online/idle/invisible/dnd
+  client.user.setStatus('Online'); // Online/idle/invisible/dnd
 //  client.user.setGame('say /noice for noice') //
-  client.user.setActivity("死左", { type: "PLAYING"})//WATCHING;PLAYING
+  client.user.setActivity("CSGO", { type: "PLAYING"})//WATCHING;PLAYING
 
 });
 //變量(variables)
@@ -53,34 +53,9 @@ client.on('message', msg => {
     msg.channel.send("你就ON9!!!");
   }
   if (checkCommand(msg,"help")){
-     msg.reply({embed:{
-      title: "唉~~" ,
-      description: "都訂左蓋..  仲想HELP? 好啦.." ,
-      color: 0xFF4E28
-    }});
     msg.reply({embed:{
-      title: "未來行程" ,
-      description: "輸入「!!000」可查看未來行程" ,
-      color: 0xFF4E28
-    }});
-    msg.reply({embed:{
-      title: "本週上課日" ,
-      description: "輸入「!!001」可查看本週上課日" ,
-      color: 0xFF4E28
-    }})
-    msg.reply({embed:{
-      title: "未來加班日" ,
-      description: "輸入「!!002」可查看未來加班日" ,
-      color: 0xFF4E28
-    }})
-    msg.reply({embed:{
-      title: "未來休息日" ,
-      description: "輸入「!!003」可查看未來休息日" ,
-      color: 0xFF4E28
-    }})
-    msg.reply({embed:{
-      title: "最後更新時間" ,
-      description: "輸入「!!004」可查看最後更新時間" ,
+      title: "想得到幫助?" ,
+      description: "無指令呀XD!! 都無聊天功能(!)" ,
       color: 0xFF4E28
     }})
   }
@@ -90,26 +65,6 @@ client.on('message', msg => {
       description: "暫時沒有資料XD" ,
       color: 0xFF4E28
     }})
-  }
-  if (checkCommand(msg,"000")){//未來行程
-    msg.channel.send("未來行程:");
-    msg.channel.send("29/1 19:00到太和");
-  }
-  if (checkCommand(msg,"001")){//本週上課日
-    msg.channel.send("本周上課天為星期一、三、四");
-    msg.channel.send("下周上課天為星期一、三、四、五");
-  }
-  if (checkCommand(msg,"002")){//未來加班日
-    msg.channel.send("未來加班日:");
-    msg.channel.send("2月8日(四)");
-  }  
-  if (checkCommand(msg,"003")){//未來休息日
-    msg.channel.send("未來休息日:");
-    msg.channel.send("2月2日(六)至2月6日(三)");
-  }
-  if (checkCommand(msg,"004")){//最後更新時間
-    msg.channel.send("最後更新時間:");
-    msg.channel.send("2019/01/29 01:27");
   }
   if (checkCommand(msg,"on9")) {
     msg.reply("@___@... 唔好啦~")
@@ -123,7 +78,7 @@ client.on('message', msg => {
   }
   function checkCommand(msg, commandName)
   {
-    return msg.content.toLowerCase().startsWith("!!" + commandName)
+    return msg.content.toLowerCase().startsWith("!" + commandName)
   }
 });
 
