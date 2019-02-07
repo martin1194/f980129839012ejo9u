@@ -1,7 +1,7 @@
 {
-  "name": "f980129839012ejo9u",
+  "name": "機器人(TREEEEE)",
   "description": "機器人(TREEEEE)",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
     "start": "bot.js"
